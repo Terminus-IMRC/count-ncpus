@@ -11,7 +11,7 @@ long int get_ncpus_sched()
 
 	CPU_ZERO(&cs);
 	if(sched_getaffinity(0, sizeof(cs), &cs)==-1){
-		perror("sched_setaffinity");
+		perror("sched_getaffinity");
 		exit(EXIT_FAILURE);
 	}
 
