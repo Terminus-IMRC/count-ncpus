@@ -1,5 +1,5 @@
 CFLAGS=-Wall -Wextra
-OBJS=main.o sched.o sysconf.o
+OBJS=main.o sched.o sysconf.o sysconf-conf.o
 
 main: $(OBJS)
 
